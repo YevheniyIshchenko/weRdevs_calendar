@@ -1,0 +1,55 @@
+.calendar {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  width: 467px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.43);
+  border-collapse: collapse;
+
+  .footer {
+    text-align: center;
+    color: #dfdfdf;
+    height: 60px;
+    font-size: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.43) !important;
+    &__day {
+      width: 52px;
+      height: 51px;
+    }
+  }
+  &__head {
+    margin: 0 auto;
+    display: flex;
+    width: 425px;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #dfdfdf;
+    button {
+      background: none;
+      border: none;
+      color: #dfdfdf;
+    }
+  }
+  &__day {
+    height: 51px;
+    text-align: center;
+    font-size: 16px;
+
+    &__cell {
+      text-align: center;
+      color: #dfdfdf;
+    }
+    .grayDay {
+      color: #dfdfdf;
+      opacity: 0.24;
+    }
+    .sameDay {
+      color: #3d3d3d;
+      background: #fdd000;
+    }
+  }
+}
+

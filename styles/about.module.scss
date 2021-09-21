@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 1336px;
+  margin: 0 auto;
+
+  &__header {
+    display: flex;
+    justify-content: start;
+    height: 41px;
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: -0.68px;
+    margin-top: 100px;
+    margin-bottom: 78px;
+  }
+}
+.content {
+  max-width: 1336px;
+  height: 582px;
+  letter-spacing: 0.4px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .container{
+    max-width: 576px;
+    padding: 0 10px;
+    justify-content: start;
+    &__header{
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+  }
+ }
